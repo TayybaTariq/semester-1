@@ -141,51 +141,48 @@ void menu()
 {
 	int length,choice;
 	
-	cout << "Press 1 for right triangle " << endl;
-	cout << "Press 2 for  reverse right triangle " << endl;
-	cout << "Press 3 for left triangle " << endl;
-	cout << "Press 4 for reverse left triangle " << endl;
-	cout << "Press 5 pyramid " << endl;
-	cout << "Press 6 for diamond " << endl;
-	cout << "Press 7 for sandglass " << endl;
-
-    cout << "enter your choice " << endl;
+	// Printing Menu
+	cout << "=========================================="<<endl;
+	cout << "Press 1 for Right Triangle " << endl;
+	cout << "Press 2 for Reverse right triangle " << endl;
+	cout << "Press 3 for Left Triangle " << endl;
+	cout << "Press 4 for Reverse left triangle " << endl;
+	cout << "Press 5 for Pyramid " << endl;
+	cout << "Press 6 for Diamond " << endl;
+	cout << "Press 7 for Sandglass " << endl;
+	cout << "=========================================="<<endl;
+    	
+	// Taking Choice from user
+	cout << "Enter your choice => ";
 	cin >> choice;
+	
+	
+	// Length was common in all so i added it once outside
+	// Taking Length from user
+	cout << "Enter the length : ";
+	cin >> length;
+	// Performing Action on User Choice
 	switch (choice)
 	{
 	case 1:
-		cout << "enter the length :";
-		cin >> length;
 		right(length);
 		break;
 	case 2:
-		cout << "enter the length :";
-		cin >> length;
 		rightr(length);
 		break;
 	case 3:
-		cout << "enter the length :";
-		cin >> length;
 		left(length);
 		break;
 	case 4:
-		cout << "enter the length :";
-		cin >> length;
 		leftr(length);
 		break;
 	case 5:
-		cout << "enter the length :";
-		cin >> length;
 		pyramid(length);
 		break;
 	case 6:
-		cout << "enter the length :";
-		cin >> length;
 		diamond(length);
 		break;
 	case 7:
-		cout << "enter the length :";
-		cin >> length;
 		sandglass(length);
 		break;
 	default:
